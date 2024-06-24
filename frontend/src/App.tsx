@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {
   BrowserRouter as Router,
   Route,
@@ -18,6 +18,8 @@ const App = () => {
 
           </Layout>
         } />
+
+<Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
     

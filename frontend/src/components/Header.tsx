@@ -1,8 +1,9 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
+import SignOutButton from './SignOutButton';
 
 const Header = () => {
-    const  isLoggedIn  = false;
+    const  isLoggedIn  = true;
   return (
     <div className="bg-blue-800 py-6">
       <div className="container mx-auto flex justify-between">
@@ -26,6 +27,7 @@ const Header = () => {
               >
                 My Hotels
               </Link>
+              <SignOutButton />
               </>
 
                 ):(
